@@ -1,26 +1,28 @@
 package no.transfinite.mutation;
-
-import junit.framework.TestCase;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by ronnyma on 05/02/2017.
  */
-public class CalculateTest extends TestCase {
+public class CalculateTest {
+    @org.junit.Before
     public void setUp() throws Exception {
         cl = new Calculate();
-
     }
 
-    public void testAdd() throws Exception {
-        assertEquals(14, cl.add(5,9));
+    @org.junit.Test
+    public void add() throws Exception {
+        assertEquals(16,cl.add(7,9));
     }
 
-    public void testSubtract() throws Exception {
-        assertEquals(6,cl.subtract(18,12));
-
+    @org.junit.Test
+    public void subtract() throws Exception {
+        assertEquals(7,cl.subtract(18,11));
     }
 
-    public void testMin() throws Exception {
+    @org.junit.Test
+    public void min() throws Exception {
         assertTrue(true);
     }
 
