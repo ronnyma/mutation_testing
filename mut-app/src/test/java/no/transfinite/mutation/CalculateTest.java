@@ -1,4 +1,5 @@
 package no.transfinite.mutation;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -13,17 +14,17 @@ public class CalculateTest {
 
     @org.junit.Test
     public void add() throws Exception {
-        assertEquals(16,cl.add(7,9));
+        assertEquals(16, cl.add(7, 9));
     }
 
     @org.junit.Test
     public void subtract() throws Exception {
-        assertEquals(7,cl.subtract(18,11));
+        assertEquals(7, cl.subtract(18, 11));
     }
 
     @org.junit.Test
     public void min() throws Exception {
-        assertTrue(true);
+        assertEquals(17, cl.min(17, 29));
     }
 
     Calculate cl;
